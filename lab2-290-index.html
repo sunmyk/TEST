@@ -16,11 +16,17 @@
  
         <tr>
             <th bgcolor="BurlyWood" width="50">姓名:</th>
-            <td width="100">孙义凯</td>
+            <td><input type="text" name="name" maxlength="20" required></td>
             <th bgcolor="BurlyWood" width="50">性别:</th>
-            <td>男</td>
+            <td>
+                <select name="gender" required>
+                    <option value="">请选择</option>
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select>
+            </td>
             <th bgcolor="BurlyWood" width="50">年龄:</th>
-            <td>19</td>
+            <td><input type="number" name="age" min="18" max="60" required></td>
             <td rowspan="3" width="100">
                 <div>
                 	<img src="IMG_20250331_171657.jpg" alt="照片" width="200" height="220">
@@ -30,29 +36,70 @@
  
         <tr>
             <th bgcolor="BurlyWood">籍贯:</th>
-            <td>山东枣庄</td>
+            <td><input type="text" name="hometown" maxlength="50"></td>
             <th bgcolor="BurlyWood">联系电话:</th>
-            <td>18865687518</td>
+            <td><input type="tel" name="phone" pattern="[0-9]{11}" required></td>
             <th bgcolor="BurlyWood">电子邮件:</th>
-            <td>sunmyk@outlook</td>
+            <td><input type="email" name="email" required></td>
         </tr>
  
         <tr>
             <th bgcolor="BurlyWood">学历:</th>
-            <td>本科</td>
+            <td>
+                <select name="education" required>
+                    <option value="">请选择</option>
+                    <option value="high-school">高中</option>
+                    <option value="college">大专</option>
+                    <option value="bachelor">本科</option>
+                    <option value="master">硕士</option>
+                    <option value="phd">博士</option>
+                </select>
+            </td>
             <th bgcolor="BurlyWood">健康状况:</th>
-            <td>健康</td>
+            <td>
+                <select name="health" required>
+                    <option value="">请选择</option>
+                    <option value="excellent">优秀</option>
+                    <option value="good">良好</option>
+                    <option value="normal">一般</option>
+                </select>
+            </td>
             <th bgcolor="BurlyWood">婚姻状况:</th>
-            <td>未婚</td>
+           <td>
+               <select name="marital-status" required>
+                   <option value="">请选择</option>
+                   <option value="single">未婚</option>
+                   <option value="married">已婚</option>
+                   <option value="divorced">离异</option>
+               </select>
+           </td>
         </tr>
  
         <tr>
             <th bgcolor="BurlyWood">求职意向:</th>
-            <td>软件测试师</td>
+            <td>
+                <select name="job-intention" required>
+                    <option value="">请选择</option>
+                    <option value="frontend">前端开发</option>
+                    <option value="backend">后端开发</option>
+                    <option value="fullstack">全栈开发</option>
+                    <option value="designer">设计师</option>
+                    <option value="product">产品经理</option>
+                </select>
+            </td>
             <th bgcolor="BurlyWood">专业:</th>
-            <td>软件工程</td>
+            <td><input type="text" name="major" maxlength="50" required></td>
             <th bgcolor="BurlyWood">毕业院校:</th>
-            <td>鲁东大学</td>
+            <td>
+                <select name="university" required>
+                    <option value="">请选择</option>
+                    <option value="tsinghua">清华大学</option>
+                    <option value="pku">北京大学</option>
+                    <option value="fudan">复旦大学</option>
+                    <option value="zju">浙江大学</option>
+                    <option value="other">其他院校</option>
+                </select>
+            </td>
         </tr>
  
         <tr>
