@@ -112,17 +112,16 @@
                 <caption>个人简历</caption>
                 <tr>
                     <th>姓名</th>
-                    <td><input type="text" name="name" maxlength="20" required></td>
+                    <td><input type="text" name="name" maxlength="20" required value="孙义凯"></td>
                     <th>性别</th>
                     <td>
                         <select name="gender" required>
-                            <option value="">请选择</option>
                             <option value="male">男</option>
                             <option value="female">女</option>
                         </select>
                     </td>
                     <th>年龄</th>
-                    <td><input type="number" name="age" min="18" max="60" required></td>
+                    <td><input type="number" name="age" min="18" max="60" required value="18"></td>
                 <td rowspan="3" width="100">
                     <div>
                     	<img src="IMG_20250331_171657.jpg" alt="照片" width="110" height="150">
@@ -131,20 +130,19 @@
 				</tr>
                 <tr>
                     <th>籍贯</th>
-                    <td><input type="text" name="hometown" maxlength="50"></td>
+                    <td><input type="text" name="hometown" maxlength="50" value="山东枣庄"></td>
                     <th>联系电话</th>
-                    <td><input type="tel" name="phone" pattern="[0-9]{11}" required></td>
+                    <td><input type="tel" name="phone" pattern="[0-9]{11}" required value="18865687518"></td>
                     <th>电子邮箱</th>
-                    <td><input type="email" name="email" required></td>
+                    <td><input type="email" name="email" required value="1240417963@qq.com"></td>
                 </tr>
                 <tr>
                     <th>学历</th>
                     <td>
                         <select name="education" required>
-                            <option value="">请选择</option>
+                            <option value="bachelor">本科</option>
                             <option value="high-school">高中</option>
                             <option value="college">大专</option>
-                            <option value="bachelor">本科</option>
                             <option value="master">硕士</option>
                             <option value="phd">博士</option>
                         </select>
@@ -152,7 +150,6 @@
                     <th>健康状况</th>
                     <td>
                         <select name="health" required>
-                            <option value="">请选择</option>
                             <option value="excellent">优秀</option>
                             <option value="good">良好</option>
                             <option value="normal">一般</option>
@@ -161,7 +158,6 @@
                     <th>婚姻状况</th>
                     <td>
                         <select name="marital-status" required>
-                            <option value="">请选择</option>
                             <option value="single">未婚</option>
                             <option value="married">已婚</option>
                             <option value="divorced">离异</option>
@@ -177,7 +173,6 @@
                         <th>求职意向</th>
                         <td>
                             <select name="job-intention" required>
-                                <option value="">请选择</option>
                                 <option value="frontend">前端开发</option>
                                 <option value="backend">后端开发</option>
                                 <option value="fullstack">全栈开发</option>
@@ -186,11 +181,11 @@
                             </select>
                         </td>
                         <th>专业</th>
-                        <td><input type="text" name="major" maxlength="50" required></td>
+                        <td><input type="text" name="major" maxlength="50" required value="软件工程"></td>
                         <th>毕业院校</th>
                         <td>
                             <select name="university" required>
-                                <option value="">请选择</option>
+                                <option value="">鲁东大学</option>
                                 <option value="tsinghua">清华大学</option>
                                 <option value="pku">北京大学</option>
                                 <option value="fudan">复旦大学</option>
@@ -205,9 +200,18 @@
             <fieldset>
                 <legend>技能证书</legend>
                 <div class="checkbox-group">
+					<div class="checkbox-group">
+					    <div class="checkbox-item">
+					        <input type="checkbox" id="cert1" name="certificates" value="designer" checked>
+					        <label for="cert1">英语四级</label>
+					    </div>
+					    <div class="checkbox-item">
+					        <input type="checkbox" id="cert2" name="certificates" value="engineer" checked>
+					        <label for="cert2">计算机二级</label>
+					    </div>
                     <div class="checkbox-item">
                         <input type="checkbox" id="cert1" name="certificates" value="english4">
-                        <label for="cert1">英语四级</label>
+                        <label for="cert1">高级软件系统设计师</label>
                     </div>
                     <div class="checkbox-item">
                         <input type="checkbox" id="cert2" name="certificates" value="english6">
@@ -215,7 +219,7 @@
                     </div>
                     <div class="checkbox-item">
                         <input type="checkbox" id="cert3" name="certificates" value="computer2">
-                        <label for="cert3">计算机二级</label>
+                        <label for="cert3">计算机办公应用助理工程师</label>
                     </div>
                     <div class="checkbox-item">
                         <input type="checkbox" id="cert4" name="certificates" value="driver">
@@ -235,41 +239,42 @@
             <fieldset>
                 <legend>个人特长与爱好</legend>
                 <div class="checkbox-group">
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby1" name="hobbies" value="music">
-                        <label for="hobby1">音乐</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby2" name="hobbies" value="sports">
-                        <label for="hobby2">运动</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby3" name="hobbies" value="reading">
-                        <label for="hobby3">阅读</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby4" name="hobbies" value="travel">
-                        <label for="hobby4">旅游</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby5" name="hobbies" value="photography">
-                        <label for="hobby5">摄影</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="hobby6" name="hobbies" value="drawing">
-                        <label for="hobby6">绘画</label>
-                    </div>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby1" name="hobbies" value="c" checked>
+                            <label for="hobby1">C语言编程</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby2" name="hobbies" value="java" checked>
+                            <label for="hobby2">Java编程</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby3" name="hobbies" value="painting" checked>
+                            <label for="hobby3">绘画</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby4" name="hobbies" value="singing" checked>
+                            <label for="hobby4">唱歌</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby5" name="hobbies" value="writing" checked>
+                            <label for="hobby5">写作</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="hobby6" name="hobbies" value="badminton" checked>
+                            <label for="hobby6">羽毛球</label>
+                        </div>
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend>项目经历</legend>
-                <textarea name="project-experience" maxlength="1000" placeholder="请简要描述您的项目经历..."></textarea>
+                <textarea name="project-experience" maxlength="1000" placeholder="请简要描述您的项目经历...">暂无</textarea>
             </fieldset>
 
             <fieldset>
                 <legend>自我评价</legend>
-                <textarea name="self-evaluation" maxlength="500" placeholder="请简要描述您的自我评价..."></textarea>
+                <textarea name="self-evaluation" maxlength="500" placeholder="请简要描述您的自我评价...">在学习上，我始终保持着强烈的求知欲和上进心。我深知学习是一个不断积累和进步的过程，因此我总是以积极的态度面对每一门课。对于专业知识，我不仅注重理论学习，还积极参加实践活动，将所学知识应用到实际中。通过不断地努力，我在学业上取得了较为优异的成绩。在性格方面，我开朗，乐观，善于与人沟通交流，在团队合作中发挥积极的作用，我相信团队的力量是无穷的，通过与他人的合作，我们可以共同完成许多看似不可能的任务。同时我也具有较强的独立思考能力和解决五难题的能力，在面对困难和挑战时，我能够冷静分析，寻找最佳的解决方案，在生活中，我热爱艺术和文化活动。绘画和写作是我表达自己情感和想法的方式，它们让我更加了解自己，也让我能够更好地与他人分享我的内心世界。此外，我还喜欢运动，羽毛球和健美换不仅让我保持了鍵康的身体，还培养了我的料力和坚持精神。总的来说，我认为自己是一个有梦想、有追求、有责任感的人，我希望能多不断提升自己，为实现自己的人生目标而努力奋斗。我相信，只要我坚持不像地努力，就一定能够取得成功。</textarea>
             </fieldset>
 
             <div class="button-group">
